@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tailwind practice | Javier Fuertes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24ff0aa52c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="mx-auto bg-white p-5 lg:w-[1500px] mb-24">
+        <nav class="mb-10 flex h-14 w-full justify-between rounded px-5">
+            <h1 class="my-auto font-mono text-2xl font-semibold"> <i class="fa-regular fa-compass mr-3"></i>WorldTravel
+            </h1>
+            <ul class="my-auto flex gap-16 max-sm:hidden text-base font-semibold">
+                <li class="my-auto"><a href="./index.html">Home</a></li>
+                <li class="my-auto"><a href="#">Trips</a></li>
+                <li class="my-auto"><a href="#">Itineraries</a></li>
+                <li>
+                    <a href="./sign_up.html"
+                        class="flex rounded border border-gray-300 px-3 py-2 hover:bg-black hover:text-white hover:border-white">
+                        <p class="my-auto"><i class="fa-solid fa-circle-user mr-2"></i> Sign up</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="my-auto hidden max-sm:block">
+                <p><i class="fa-solid fa-bars"></i></p>
+            </div>
+        </nav>
+
+        <div class="mb-5 flex h-[600px] w-full gap-4 rounded p-3 max-sm:h-full max-sm:flex-col">
+            <div class="flex w-[100px] flex-grow flex-col justify-center bg-transparent max-sm:w-full">
+                <h2 class="mb-3 text-6xl font-thin max-sm:text-4xl">
+                    Travel as if there was
+                </h2>
+                <h2 class="mb-5 text-6xl font-thin max-sm:text-4xl">
+                    no tomorrow.
+                </h2>
+                <p class="font-thin text-xl w-[500px] max-sm:w-[300px] max-sm:text-base">Plan your next trip and
+                    discover
+                    new adventures around the
+                    world. From the
+                    commodity of your home.</p>
+            </div>
+            <div class="aspect-square rounded bg-transparent bg-cover bg-center"
+                style="background-image: url(./assets/hero.jpg)">
+            </div>
+        </div>
+
+        <h2 class="mb-6 mt-10 text-3xl font-semibold">Discover our advantages</h2>
+        <div class="mb-5 flex gap-6 max-sm:flex-col">
+            <div class="rounded border shadow-md text-center flex-col py-16 px-5">
+                <img src="./assets/easy.png" class="w-[40px] mx-auto mb-5" />
+                <h2 class="font-sans text-lg font-semibold">Easy to use</h2>
+                <p class="clase my-3 text-sm/6">Subtitle of the card with more text in it that it can even jump to a
+                    second line.</p>
+                <button class=" font-semibold text-blue-700">Know more</button>
+            </div>
+            <div class="mx-auto rounded border px-5 shadow-md text-center py-16">
+                <img src="./assets/smartphone.png" class="w-[40px] mx-auto mb-5" />
+                <h2 class="font-sans text-lg font-semibold">Phones are friends</h2>
+                <p class="my-3 text-sm/6">Subtitle of the card with more text in it that it can even jump to a second
+                    line.</p>
+                <button class="py-2 font-semibold text-blue-700">Know more</button>
+            </div>
+            <div class="mx-auto rounded border px-5 shadow-md text-center py-16">
+                <img src="./assets/passport.png" class="w-[40px] mx-auto mb-5" />
+                <h2 class="font-sans text-lg font-semibold">Hassle-free travel</h2>
+                <p class="my-3 text-sm/6">Subtitle of the card with more text in it that it can even jump to a second
+                    line.</p>
+                <button class="py-2 font-semibold text-blue-700">Know more</button>
+            </div>
+        </div>
+
+        <h2 class="mb-6 mt-32 text-3xl font-semibold">Popular destinations</h2>
+        <div class="flex max-sm:flex-col">
+            <div class="flex flex-col pr-5 gap-3 max-sm:flex-row max-sm:mb-5">
+                <div
+                    class="border rounded md:h-[80px] w-[318px] bg-green-100 border-green-600 flex flex-col items-center justify-center max-sm:py-1 hover:bg-green-100">
+                    <p>Tokyo</p>
+                    <p class="text-xs text-gray-400"><i class="fa-solid fa-heart"></i> 4,357 likes</p>
+                </div>
+                <div
+                    class="border rounded md:h-[80px] w-[318px] flex flex-col items-center justify-center hover:bg-green-100 transition-all duration-100">
+                    <p>Paris</p>
+                    <p class="text-xs text-gray-400"><i class="fa-solid fa-heart"></i> 3,231 likes</p>
+                </div>
+                <div
+                    class="border rounded md:h-[80px] w-[318px] flex flex-col items-center justify-center hover:bg-green-100 transition-all duration-100">
+                    <p>Barcelona</p>
+                    <p class="text-xs text-gray-400"><i class="fa-solid fa-heart"></i> 2,982 likes</p>
+                </div>
+            </div>
+            <div class="shadow-md border rounded p-10 max-sm:p-5 flex-1">
+                <h2 class="text-2xl mb-3">Tokyo</h2>
+                <div style="background-image: url(./assets/tokyo.jpg)"
+                    class="w-full h-40 bg-cover bg-center rounded mb-4 my-7">
+                </div>
+                <p class="max-sm:text-sm text-ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur nec mollis
+                    odio. Orci varius
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fringilla velit
+                    arcu, in feugiat sapien blandit quis. Proin non arcu vel velit rhoncus aliquet non sodales nibh.
+                    Donec dui arcu, venenatis ut dictum sit amet, sollicitudin eu mi. Suspendisse in diam consequat,
+                    pretium sem ut, sollicitudin felis. Nulla facilisi. Integer tempus sit amet metus quis dapibus.
+                    Vestibulum rhoncus mollis accumsan. Curabitur dictum, lectus non lacinia malesuada, dui massa
+                    elementum leo, quis sodales magna velit sit amet tellus.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="w-full h-96 bg-black flex justify-center items-center text-center">
+        <div class="w-52 text-white">
+            <h1 class="my-auto font-mono text-2xl font-semibol mb-3"> <i
+                    class="fa-regular fa-compass mr-3"></i>WorldTravel
+            </h1>
+            <p class="mb-3">C/ La Bañeza 40 bis, Madrid, Spain</p>
+            <p class="text-xs"><i class="fa-regular fa-copyright"></i> All rights reserved to Javier Fuertes Fernández
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up | Tailwind test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24ff0aa52c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./form_validation.js"></script>
+</head>
+
+<body>
+    <main class="mx-auto bg-white p-5 lg:w-[1500px] mb-24">
+        <nav class="mb-10 flex h-14 w-full justify-between rounded px-5">
+            <h1 class="my-auto font-mono text-2xl font-semibold"> <i class="fa-regular fa-compass mr-3"></i>WorldTravel
+            </h1>
+            <ul class="my-auto flex gap-16 max-sm:hidden text-base font-semibold">
+                <li class="my-auto"><a href="./index.html">Home</a></li>
+                <li class="my-auto"><a href="#">Trips</a></li>
+                <li class="my-auto"><a href="#">Itineraries</a></li>
+                <li>
+                    <a href="./sign_up.html"
+                        class="flex rounded border border-gray-300 px-3 py-2 hover:bg-black hover:text-white hover:border-white">
+                        <p class="my-auto"><i class="fa-solid fa-circle-user mr-2"></i> Sign up</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="my-auto hidden max-sm:block">
+                <p><i class="fa-solid fa-bars"></i></p>
+            </div>
+        </nav>
+
+        <section class="flex max-sm:flex-col">
+            <div class="flex-1 p-5">
+                <h2 class="mb-10 text-5xl font-thin max-sm:text-4xl">
+                    Sign up
+                </h2>
+                <form method="GET" action="/" class="w-full max-w-lg" id="form">
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="fname">
+                                First Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="fname" type="text" placeholder="Jane">
+                            <p class="text-red-500 text-xs italic error"></p>
+                        </div>
+                        <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="lname">
+                                Last Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="lname" type="text" placeholder="Doe">
+                            <p class="text-red-500 text-xs italic error"></p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="email">
+                                Email
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="email" type="text" placeholder="something@something.com">
+                            <p class="text-red-500 text-xs italic error"></p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="password">
+                                Password
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="password" type="password" placeholder="******************">
+                            <p class="text-red-500 text-xs italic error"></p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="password2">
+                                Repeat password
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="password2" type="password" placeholder="******************">
+                            <p class="text-red-500 text-xs italic error"></p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="phone">
+                                Phone number
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="phone" type="tel">
+                            <p class="text-red-500 text-xs italic error"></p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-2">
+                        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-city">
+                                City
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="grid-city" type="text" placeholder="Madrid">
+                        </div>
+                        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-state">
+                                Province
+                            </label>
+                            <div class="relative">
+                                <select
+                                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-state">
+                                    <option value="">Elige Provincia</option>
+                                    <option value="Álava/Araba">Álava</option>
+                                    <option value="Albacete">Albacete</option>
+                                    <option value="Alicante">Alicante</option>
+                                    <option value="Almería">Almería</option>
+                                    <option value="Asturias">Asturias</option>
+                                    <option value="Ávila">Ávila</option>
+                                    <option value="Badajoz">Badajoz</option>
+                                    <option value="Baleares">Baleares</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Burgos">Burgos</option>
+                                    <option value="Cáceres">Cáceres</option>
+                                    <option value="Cádiz">Cádiz</option>
+                                    <option value="Cantabria">Cantabria</option>
+                                    <option value="Castellón">Castellón</option>
+                                    <option value="Ceuta">Ceuta</option>
+                                    <option value="Ciudad Real">Ciudad Real</option>
+                                    <option value="Córdoba">Córdoba</option>
+                                    <option value="Cuenca">Cuenca</option>
+                                    <option value="Gerona/Girona">Gerona</option>
+                                    <option value="Granada">Granada</option>
+                                    <option value="Guadalajara">Guadalajara</option>
+                                    <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa</option>
+                                    <option value="Huelva">Huelva</option>
+                                    <option value="Huesca">Huesca</option>
+                                    <option value="Jaén">Jaén</option>
+                                    <option value="La Coruña/A Coruña">La Coruña</option>
+                                    <option value="La Rioja">La Rioja</option>
+                                    <option value="Las Palmas">Las Palmas</option>
+                                    <option value="León">León</option>
+                                    <option value="Lérida/Lleida">Lérida</option>
+                                    <option value="Lugo">Lugo</option>
+                                    <option value="Madrid">Madrid</option>
+                                    <option value="Málaga">Málaga</option>
+                                    <option value="Melilla">Melilla</option>
+                                    <option value="Murcia">Murcia</option>
+                                    <option value="Navarra">Navarra</option>
+                                    <option value="Orense/Ourense">Orense</option>
+                                    <option value="Palencia">Palencia</option>
+                                    <option value="Pontevedra">Pontevedra</option>
+                                    <option value="Salamanca">Salamanca</option>
+                                    <option value="Segovia">Segovia</option>
+                                    <option value="Sevilla">Sevilla</option>
+                                    <option value="Soria">Soria</option>
+                                    <option value="Tarragona">Tarragona</option>
+                                    <option value="Tenerife">Tenerife</option>
+                                    <option value="Teruel">Teruel</option>
+                                    <option value="Toledo">Toledo</option>
+                                    <option value="Valencia">Valencia</option>
+                                    <option value="Valladolid">Valladolid</option>
+                                    <option value="Vizcaya/Bizkaia">Vizcaya</option>
+                                    <option value="Zamora">Zamora</option>
+                                    <option value="Zaragoza">Zaragoza</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-zip">
+                                Zip
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="grid-zip" type="text" placeholder="28002">
+                        </div>
+                    </div>
+                    <button
+                        class="mt-10 px-5 py-3 bg-blue-200 rounded text-blue-800 font-semibold hover:bg-blue-950 hover:text-white hover:transition-all hover:duration-200"
+                        type="submit">Create
+                        account <i class="fa-solid fa-check ml-2"></i></button>
+                </form>
+            </div>
+            <div class="aspect-square rounded bg-transparent bg-cover bg-center md:flex-1"
+                style="background-image: url(./assets/signup.jpg)"></div>
+        </section>
+    </main>
+    <footer class="w-full h-96 bg-black flex justify-center items-center text-center">
+        <div class="w-52 text-white">
+            <h1 class="my-auto font-mono text-2xl font-semibol mb-3"> <i
+                    class="fa-regular fa-compass mr-3"></i>WorldTravel
+            </h1>
+            <p class="mb-3">C/ La Bañeza 40 bis, Madrid, Spain</p>
+            <p class="text-xs"><i class="fa-regular fa-copyright"></i> All rights reserved to Javier Fuertes Fernández
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
