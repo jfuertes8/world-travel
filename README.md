@@ -16,3 +16,6 @@ The validations are triggered when trying to submit the form
 
 ## How to use
 Since this project is using Tailwing CDN link, you can simply download the folder and open the index.html to start playing around with the website files
+
+## Live demo
+You can try this webpage here: https://jfuertes8.github.io/world-travel/
